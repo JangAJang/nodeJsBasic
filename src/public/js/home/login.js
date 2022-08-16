@@ -11,5 +11,12 @@ function login(){
         id: id.value,
         password: password.value,
     };
-    fetch();
+    fetch("/login", {
+        method: "POST",
+        header:{
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(req)
+    });
 }
+
