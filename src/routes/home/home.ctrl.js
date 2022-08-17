@@ -9,7 +9,14 @@ const output = {
     },
 };
 
+const process = {
+    login: (req, res) =>{
+        console.log(req.body);
+    },
+};
+
 module.exports = {
     output, 
+    process,
 };
 
