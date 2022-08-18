@@ -14,4 +14,4 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/", home); //use = 미들웨어를 등록해준다. 
 
-module.exports = app;
+module.exports = app;  
