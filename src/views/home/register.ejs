@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/home/login.css">
-        <script src="/js/home/login.js" defer></script>
+        <script src="/js/home/register.js" defer></script>
         <title>Document</title>
     </head>
     <body>
@@ -16,15 +16,24 @@
             <label>Username</label>
             </div>
             <div class="user-box">
+            <input type="text" id="name" required="">
+            <label>name</label>
+            </div>
+            <div class="user-box">
             <input type="password" id="password" required="">
             <label>Password</label>
+            </div>
+            </div>
+            <div class="user-box">
+            <input type="password" id="passwordcheck" required="">
+            <label>check password</label>
             </div>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <button>Submit</button>
-            <a href="/register">register</a>
+            <button>Sign Up</button>
+            <a href="/login">login</a>
         </form>
         </div>
     </body>

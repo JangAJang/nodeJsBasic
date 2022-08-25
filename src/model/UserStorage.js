@@ -18,9 +18,9 @@ class UserStorage{
         return newUsers;
     }
 
-    static getUserInfo(id){
-        const user = this.#users;
-        const index = users.id.index[id];
+    static getUserInfo(newId){
+        const users = this.#users;
+        const index = users.id.indexOf(newId);
         const userInfo = Object.keys(users).reduce((newUser, info)=>{
             newUser[info] = users[info][index];
             return newUser;
