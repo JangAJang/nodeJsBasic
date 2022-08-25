@@ -12,6 +12,7 @@ class User{
         const {id, password} = UserStorage.getUserInfo(body.id);
         if(id){
             if(id === body.id && password === body.password){
+                console.log("success");
                 return {success : true};
             }
             return {success:false, msg: "wrong password"};
