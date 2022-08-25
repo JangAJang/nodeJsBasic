@@ -17,6 +17,17 @@ class UserStorage{
     }, {});
         return newUsers;
     }
+
+    static getUserInfo(id){
+        const user = this.#users;
+        const index = users.id.index[id];
+        const userInfo = Object.keys(users).reduce((newUser, info)=>{
+            newUser[info] = users[info][index];
+            return newUser;
+        }, {});
+
+        return userInfo;
+    }
 }
 
 module.exports = UserStorage;
